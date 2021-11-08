@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <Button
+        android:id="@+id/vibrateBack"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/ic_baseline_keyboard_backspace_24"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:id="@+id/vibrate_panel1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/vibrate_input"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:background="#a29990"
+            android:hint="Введите продолжительность вибрации"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vibrate_panel2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_ok_btn"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ff7d00"
+            android:hint="OK"
+            android:textColor="@color/white"
+            android:textColorHint="#FAF5F5"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_cancel_btn"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ff7d00"
+            android:hint="Отмена"
+            android:textColorHint="@color/white"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+</LinearLayout>
